@@ -9,6 +9,7 @@ docker rm crocdockercontainer
 docker run \
 --name crocdockercontainer \
 -it \
+-v ~/Desktop/stardust_repos/lqr-tree-detumble/source/crocoddyl:/home/crocoddyl:rw \
 -v $XSOCK:$XSOCK:rw \
 -v $XAUTH:$XAUTH:rw \
 -e DISPLAY=$DISPLAY \

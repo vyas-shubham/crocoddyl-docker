@@ -31,3 +31,6 @@ RUN apt-get install -y ipython3 \
 
 RUN apt-get update && apt-get upgrade
 
+RUN apt-get -y install python3-pip \
+    && pip3 install matplotlib
+
